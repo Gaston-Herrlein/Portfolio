@@ -4,8 +4,8 @@
     --main-color-primary-dark: deepskyblue;
     --main-color-secondary: limegreen;
     --main-color-secondary-dark: lime;
-    --main-color-tertiary: white;
-  /*--main-color-tertiary-dark: ; */
+    /*--main-color-tertiary: white;
+    --main-color-tertiary-dark: ; */
 
     --text-color:white;
     --font-family: 'Times New Roman', Times, serif;
@@ -15,16 +15,18 @@
 *{
     background-color: var(--main-color, #101010);
     text-align: center;
-    /*padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;*/
     font-family: var(--font-family, 'Times New Roman');
     font-size: var(--font-size, 1.5rem);
 }
 
 header{
+    background-color: black;
+}
+
+div.container{
     display: flex;
     background-color: black;
+    margin: 0px 100px; 
 }
 
 ul{
@@ -36,7 +38,7 @@ li
 {
     float: left;
     font-size: 1px;
-    padding: 20px;
+    padding: 10px;
     border: 0px;
     margin: 0px;
     color: var(--text-color, white);
@@ -45,8 +47,44 @@ li
 
 a{
     background-color: black;
+    color: var(--main-color-primary, skyblue);
+    font-size: 20px;   
+}
+
+a:hover{
+    color: var(--main-color-primary-dark, deepskyblue);
+}
+
+div.container-body{
+    display: flex;
+    text-align: center;
+    margin: 0px 100px;
+}
+
+.row1{
+    width: 524px;
+    max-width: 524;
+    margin: 0px auto;
+    float: left;
+}
+
+.row2{
+    width: 524px;
+    max-width: 524;
+    margin: 0px auto;
+    float: left;
 }
 
 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+p{
     color: white
 }
