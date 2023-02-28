@@ -30,13 +30,13 @@ document.getElementById ("contact").onclick = function () {
 
 /* FUNCION CARRUCEL DE IMAGENES*/
 
-let imagenes = ["/img/perro1.jpg", "/img/perro2.jpg", "/img/perro3.jpeg"];
+let imagenes = ["/img/perro1.jpg", "/img/perro2.jpg"];
 let i = 0;
 
 document.getElementById("carrousel_img").onclick = function (){
     
     document.getElementById("imagen").src = imagenes[i];
-    if(i<2){
+    if(i<1){
         i++;
     }
     else{
