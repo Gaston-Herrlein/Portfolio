@@ -1,5 +1,26 @@
+//***********************FUNCION PARA CAMBIAR EL PARRAFO DE ACUERDO A LO SELECIONADO EN LA BARRA DE NAV**********************
+let menu = [document.getElementById ("p_home"), document.getElementById ("p_about"), document.getElementById ("p_studies"), document.getElementById ("p_contact")];
+
+function display_change (index) {
+    for (let i=0; i<4; i++){
+        if(i==index) {
+            menu[i].style.display = "block";
+            console.log ("Se apreto la opcion" + i);
+        }
+        else {
+            menu[i].style.display = "none";
+        }
+    }
+}
+
+document.getElementById ("home").onclick = () => display_change (0);
+document.getElementById ("about").onclick = () => display_change (1);
+document.getElementById ("studies").onclick = () => display_change (2);
+document.getElementById ("contact").onclick = () => display_change (3);
+
+//**********************FUNCION ITERATIVA DE CAMBIO DE PARRADO*****************************************************
+/*
 document.getElementById ("home").onclick = function () {
-    /*IDEA: hacer que se valla escribiendo de a poco con el metodo serInterval*/
     document.getElementById ("p_home").style.display ="block";
     document.getElementById ("p_about").style.display ="none";
     document.getElementById ("p_studies").style.display ="none";
@@ -26,10 +47,9 @@ document.getElementById ("contact").onclick = function () {
     document.getElementById ("p_studies").style.display ="none";
     document.getElementById ("p_contact").style.display ="block";
 }
-
+*/
 
 /* FUNCION CARRUCEL DE IMAGENES*/
-
 let imagenes = ["/img/perro1.jpg", "/img/perro2.jpg"];
 let i = 0;
 
@@ -44,6 +64,8 @@ document.getElementById("carrousel_img").onclick = function (){
     }
 };
 
+
+//***********FUNCION CARRUCEL CON OPCION DE ADELANTAR Y RETROCEDER****************************
 /*
 function carruosel (contenedor){
     contenedor.addEvenListener ("click", e => {

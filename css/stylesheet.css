@@ -45,14 +45,16 @@ li
     background-color: black;
 }
 
-a{
+a.navbar-link{
     background-color: black;
     color: var(--main-color-primary, skyblue);
+    text-decoration: none   ;
     font-size: 25px;   
 }
 
-a:hover{
+a.navbar-link:hover{
     color: var(--main-color-primary-dark, deepskyblue);
+    text-decoration: underline;
 }
 
 div.container-body{
@@ -65,28 +67,19 @@ div.container-body{
     width:50%;
     background-color: var(--main-color, #111);
     color: var(--main-color-primary-dark, deepskyblue);
-    padding: 1em;
+    padding: 0.8em;
     border: 0.3em;
     border-radius: 20px;
     border-style: solid;
     margin: 0.5em;
     float: left;
 }
-/*
-div.container {
-    background-color: #111;
-    color: deepskyblue;
-    padding: 2em;
-    border: 1.2em;
-    border-radius: 20px;
-    border-style: solid;
-    margin: 1em;
-}*/
+
 .row2{
     width:50%;
     background-color: var(--main-color, #111);
     color: var(--main-color-primary-dark, deepskyblue);
-    padding: 1em;
+    padding: 0.8em;
     border: 0.3em;
     border-radius: 20px;
     border-style: solid;
@@ -134,7 +127,25 @@ p{
     top: calc(50% - 45px)
 }
 
+div#atras:hover{
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 75px;
+    background-color:  rgba(255, 255, 255, .1);
+    color: var(--main-color-secondary-dark, lime);
+}
+
 .forward{
     right: calc(50% - 275px);
     top: calc(50% - 45px);
+}
+
+div#adelante:hover{
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 75px;
+    background-color:  rgba(255, 255, 255, .1);
+    color: var(--main-color-secondary-dark, lime);
 }
