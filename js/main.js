@@ -50,7 +50,7 @@ document.getElementById ("contact").onclick = function () {
 */
 
 /* FUNCION CARRUCEL DE IMAGENES*/
-let imagenes = ["/img/perro1.jpg", "/img/perro2.jpg"];
+let imagenes = ["/img/codigo-2.png", "/img/web-2.png"];
 let i = 0;
 
 document.getElementById("carrousel_img").onclick = function (){

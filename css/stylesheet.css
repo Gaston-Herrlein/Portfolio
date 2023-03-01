@@ -93,7 +93,7 @@ h1{
 }
 
 img{
-    width: 400px;
+    width: 350px;
     height: auto;
     display: block;
     margin: auto;
@@ -148,4 +148,11 @@ div#adelante:hover{
     border-radius: 75px;
     background-color:  rgba(255, 255, 255, .1);
     color: var(--main-color-secondary-dark, lime);
+}
+
+.Epigrafe {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-size: 15px;
 }
