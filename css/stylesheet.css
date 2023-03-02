@@ -9,14 +9,14 @@
 
     --text-color:white;
     --font-family: 'Times New Roman', Times, serif;
-    --font-size: 1.5rem;
+    --font-size: 1.4rem;
 }
 
 *{
     background-color: var(--main-color, #101010);
     text-align: center;
     font-family: var(--font-family, 'Times New Roman');
-    font-size: var(--font-size, 1.5rem);
+    font-size: var(--font-size, 1.4rem);
 }
 
 header{
@@ -75,6 +75,12 @@ div.container-body{
     float: left;
 }
 
+.foto-perfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+}
+
 .row2{
     width:50%;
     background-color: var(--main-color, #111);
@@ -95,6 +101,7 @@ h1{
 img{
     width: 350px;
     height: auto;
+    border-radius: 30px;
     display: block;
     margin: auto;
 }
@@ -123,7 +130,7 @@ p{
 }
 
 .back{
-    left: calc(50% - 275px);
+    left: calc(50% - 255px);
     top: calc(50% - 45px)
 }
 
@@ -137,7 +144,7 @@ div#atras:hover{
 }
 
 .forward{
-    right: calc(50% - 275px);
+    right: calc(50% - 255px);
     top: calc(50% - 45px);
 }
 
