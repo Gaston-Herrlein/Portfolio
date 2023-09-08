@@ -1,7 +1,7 @@
 import { ContactMail, Home, Menu, Person, Work } from '@mui/icons-material';
 import { AppBar, Box, Button, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
 import { useState } from 'react';
-import NavListDrawer from './NavListDrawer';
+import NavListDrawer from '../NavListDrawer';
 
 const navLinks =[
   {
@@ -27,11 +27,14 @@ const NavBar = () => {
           <IconButton color="inherit" size="large" onClick={() => setOpen(true)} sx={{display: {xs: "flex", sm:"none"}}}>
             <Menu />
           </IconButton>
-          <Typography variant="h6" sx={{flexGrow: 1}}>News</Typography>
+          <Typography variant="h6" sx={{flexGrow: 1}}>GH DEVELOPER</Typography>
           <Box sx={{display: {xs: "none", sm:"block"}}}>
             {
-            navLinks.map(item => (
-              <Button key={item.title} color="inherit" component="a" href={item.path}>{item.title}</Button>))
+              navLinks.map(item => (
+                <Button key={item.title} color="inherit" component="a" href={item.path}>
+                  {item.title}
+                </Button>
+              ))
             }
           </Box>
         </Toolbar>

@@ -1,12 +1,10 @@
-import { Container } from '@mui/material'
-import NavBar from './components/NavBar'
+
+import NavBar from './components/NavBar/NavBar'
 
 const App = () => {
   return (
     <>
-      <Container sx={{mt: 0}}>
-        <NavBar />
-      </Container>
+      <NavBar />
     </>
   )
 }
