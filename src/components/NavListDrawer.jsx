@@ -1,46 +1,29 @@
-import { ContactMail, Home, Person, Work } from "@mui/icons-material"
-import { Divider, List, ListItem, ListItemIcon, ListItemText } from "@mui/material"
+import { Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material"
 import { Box } from "@mui/system"
 
 
-const NavListDrawer = () => {
+// eslint-disable-next-line react/prop-types
+const NavListDrawer = ({ navLinks }) => {
     return (
-        <Box sx={{width: 250, bgcolor: "lightsalmon"}}>
+        <Box sx={{width: 200}}>
             <nav>
                 <List>
-                    <ListItem component="a" href="#home">
-                        <ListItemIcon>
-                            <Home />
-                        </ListItemIcon>
-                        <ListItemText primary="Home"/>
-                    </ListItem>
-                </List>
-                <Divider />
-                <List>
-                    <ListItem component="a" href="#About">
-                        <ListItemIcon>
-                            <Person />
-                        </ListItemIcon>
-                        <ListItemText primary="About"/>
-                    </ListItem>
-                </List>
-                <Divider />
-                <List>
-                    <ListItem component="a" href="#work">
-                        <ListItemIcon>
-                            <Work />
-                        </ListItemIcon>
-                        <ListItemText primary="Work"/>
-                    </ListItem>
-                </List>
-                <Divider />
-                <List>
-                    <ListItem component="a" href="#contact">
-                        <ListItemIcon>
-                            <ContactMail />
-                        </ListItemIcon>
-                        <ListItemText primary="Contact"/>
-                    </ListItem>
+                    {
+                        // eslint-disable-next-line react/prop-types
+                        navLinks.map(item => (
+                            <>
+                                <ListItem disablePadding key={item.title}>
+                                    <ListItemButton component="a" href={item.path}>
+                                        <ListItemIcon>
+                                            {item.icon}
+                                        </ListItemIcon>
+                                        <ListItemText primary={item.title}/>
+                                    </ListItemButton> 
+                                </ListItem>
+                                <Divider />        
+                            </>
+                        ))
+                    }
                 </List>
             </nav>
         </Box>
